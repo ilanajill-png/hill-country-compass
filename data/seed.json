@@ -1,0 +1,209 @@
+{
+  "places": [
+    {
+      "id": "natural-gardener",
+      "name": "Natural Gardener",
+      "city": "Austin",
+      "type": "garden",
+      "vibe": "plant errands and classes",
+      "why": "Good anchor for Central Texas gardening supplies, classes, and seasonal inspiration.",
+      "tags": ["gardening", "classes", "southwest-austin"],
+      "timeWindow": "morning",
+      "energy": 2,
+      "weirdness": 2,
+      "food": 1,
+      "music": 0,
+      "garden": 5,
+      "code": 1,
+      "history": 1,
+      "distanceFromSchertzMinutes": 85
+    },
+    {
+      "id": "gruene-hall",
+      "name": "Gruene Hall",
+      "city": "New Braunfels",
+      "type": "music",
+      "vibe": "classic Texas live music",
+      "why": "Easy corridor stop with a strong story: old dance hall, live music, food nearby.",
+      "tags": ["live-music", "historic", "new-braunfels"],
+      "timeWindow": "evening",
+      "energy": 3,
+      "weirdness": 3,
+      "food": 3,
+      "music": 5,
+      "garden": 0,
+      "code": 0,
+      "history": 4,
+      "distanceFromSchertzMinutes": 25
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl District",
+      "city": "San Antonio",
+      "type": "food",
+      "vibe": "food, walking, design, easy hosting",
+      "why": "Reliable restaurant cluster with enough texture for a low-friction night out.",
+      "tags": ["restaurants", "walkable", "san-antonio"],
+      "timeWindow": "afternoon-evening",
+      "energy": 2,
+      "weirdness": 2,
+      "food": 5,
+      "music": 2,
+      "garden": 1,
+      "code": 1,
+      "history": 3,
+      "distanceFromSchertzMinutes": 30
+    },
+    {
+      "id": "scoutsa-history",
+      "name": "ScoutSA / History Here Stops",
+      "city": "San Antonio",
+      "type": "history",
+      "vibe": "neighborhood stories and odd local context",
+      "why": "Turns a normal errand into a local-history side quest.",
+      "tags": ["weird-history", "walking", "san-antonio"],
+      "timeWindow": "daylight",
+      "energy": 2,
+      "weirdness": 5,
+      "food": 2,
+      "music": 0,
+      "garden": 0,
+      "code": 2,
+      "history": 5,
+      "distanceFromSchertzMinutes": 30
+    },
+    {
+      "id": "austin-ai-meetup",
+      "name": "Austin AI / Builder Meetup",
+      "city": "Austin",
+      "type": "code",
+      "vibe": "lifehacking through code and meeting builders",
+      "why": "Best fit when the goal is turning personal workflow ideas into projects.",
+      "tags": ["code", "networking", "austin"],
+      "timeWindow": "evening",
+      "energy": 4,
+      "weirdness": 2,
+      "food": 2,
+      "music": 0,
+      "garden": 0,
+      "code": 5,
+      "history": 1,
+      "distanceFromSchertzMinutes": 80
+    },
+    {
+      "id": "king-william",
+      "name": "King William Walk + Dinner",
+      "city": "San Antonio",
+      "type": "history-food",
+      "vibe": "architecture, history, and dinner",
+      "why": "Good low-key option when weird facts and restaurants both matter.",
+      "tags": ["history", "restaurants", "walkable"],
+      "timeWindow": "late-afternoon",
+      "energy": 2,
+      "weirdness": 4,
+      "food": 4,
+      "music": 1,
+      "garden": 1,
+      "code": 0,
+      "history": 5,
+      "distanceFromSchertzMinutes": 35
+    },
+    {
+      "id": "wildflower-center",
+      "name": "Lady Bird Johnson Wildflower Center",
+      "city": "Austin",
+      "type": "garden-history",
+      "vibe": "native plants, design, and Texas ecology",
+      "why": "Strong overlap between gardening inspiration and regional identity.",
+      "tags": ["native-plants", "gardening", "austin"],
+      "timeWindow": "morning-afternoon",
+      "energy": 2,
+      "weirdness": 2,
+      "food": 1,
+      "music": 0,
+      "garden": 5,
+      "code": 1,
+      "history": 3,
+      "distanceFromSchertzMinutes": 70
+    }
+  ],
+  "playlistPools": {
+    "balanced": [
+      { "title": "Texas Sun", "artist": "Khruangbin & Leon Bridges", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Sweet Disposition", "artist": "The Temper Trap", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "This Must Be the Place", "artist": "Talking Heads", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Good Life", "artist": "Kanye West", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "San Marcos", "artist": "Brockhampton", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "America", "artist": "Simon & Garfunkel", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Road Head", "artist": "Japanese Breakfast", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "New Slang", "artist": "The Shins", "platforms": ["spotify", "apple", "soundcloud"] }
+    ],
+    "garden": [
+      { "title": "Garden Song", "artist": "Phoebe Bridgers", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Bloom", "artist": "The Paper Kites", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Here Comes the Sun", "artist": "The Beatles", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Harvest Moon", "artist": "Neil Young", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Green Garden", "artist": "Laura Mvula", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Sunflower", "artist": "Rex Orange County", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Orange Sky", "artist": "Alexi Murdoch", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Texas Sun", "artist": "Khruangbin & Leon Bridges", "platforms": ["spotify", "apple", "soundcloud"] }
+    ],
+    "music": [
+      { "title": "New San Antonio Rose", "artist": "Bob Wills & His Texas Playboys", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "If I Had a Boat", "artist": "Lyle Lovett", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Are You Sure Hank Done It This Way", "artist": "Waylon Jennings", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Before the Next Teardrop Falls", "artist": "Freddy Fender", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Gimme All Your Lovin", "artist": "ZZ Top", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Texas Flood", "artist": "Stevie Ray Vaughan", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Going Up the Country", "artist": "Canned Heat", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Feathered Indians", "artist": "Tyler Childers", "platforms": ["spotify", "apple", "soundcloud"] }
+    ],
+    "food": [
+      { "title": "Sweet Thing", "artist": "Van Morrison", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Banana Pancakes", "artist": "Jack Johnson", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Coffee", "artist": "Sylvan Esso", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Peaches", "artist": "The Presidents of the United States of America", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Passionfruit", "artist": "Drake", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Sweet Potato Pie", "artist": "Ray Charles & James Taylor", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Them Changes", "artist": "Thundercat", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Texas Sun", "artist": "Khruangbin & Leon Bridges", "platforms": ["spotify", "apple", "soundcloud"] }
+    ],
+    "history": [
+      { "title": "El Paso", "artist": "Marty Robbins", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "The Man Comes Around", "artist": "Johnny Cash", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Pancho and Lefty", "artist": "Townes Van Zandt", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "The Night They Drove Old Dixie Down", "artist": "The Band", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Spanish Bombs", "artist": "The Clash", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Ballad of a Thin Man", "artist": "Bob Dylan", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "St. James Infirmary", "artist": "Hugh Laurie", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Ghost Town", "artist": "The Specials", "platforms": ["spotify", "apple", "soundcloud"] }
+    ],
+    "code": [
+      { "title": "Computer Love", "artist": "Kraftwerk", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Digital Love", "artist": "Daft Punk", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Midnight City", "artist": "M83", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Electric Feel", "artist": "MGMT", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Time to Pretend", "artist": "MGMT", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Such Great Heights", "artist": "The Postal Service", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "Harder Better Faster Stronger", "artist": "Daft Punk", "platforms": ["spotify", "apple", "soundcloud"] },
+      { "title": "The Grid", "artist": "Daft Punk", "platforms": ["spotify", "apple", "soundcloud"] }
+    ]
+  },
+  "gardenTasks": [
+    {
+      "month": "May",
+      "task": "Check irrigation before long hot stretches.",
+      "why": "Small leaks and dry containers get expensive fast in Central Texas heat."
+    },
+    {
+      "month": "May",
+      "task": "Prioritize heat-tolerant herbs and native perennials.",
+      "why": "Late spring is a better time to harden the system than to overbuy fragile plants."
+    },
+    {
+      "month": "June",
+      "task": "Shift heavy garden work to morning and add mulch.",
+      "why": "The planner should avoid sending you across town after cooking the yard all afternoon."
+    }
+  ]
+}

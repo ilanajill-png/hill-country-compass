@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hill Country Compass</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="toolbar" aria-label="Planner controls">
+        <div>
+          <p class="eyebrow">Austin / San Antonio</p>
+          <h1>Hill Country Compass</h1>
+        </div>
+        <div class="control-group">
+          <label>
+            Mood
+            <select id="mood">
+              <option value="balanced">Balanced</option>
+              <option value="garden">Garden brain</option>
+              <option value="music">Live music</option>
+              <option value="food">Good food</option>
+              <option value="history">Weird history</option>
+              <option value="code">Code/lifehack</option>
+            </select>
+          </label>
+          <label>
+            Max drive
+            <select id="drive">
+              <option value="35">35 min</option>
+              <option value="75">75 min</option>
+              <option value="120" selected>Any reasonable drive</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="summary" aria-live="polite">
+        <div>
+          <p class="eyebrow">Best fit right now</p>
+          <h2 id="best-title">Loading...</h2>
+          <p id="best-copy"></p>
+        </div>
+        <div class="garden-note">
+          <p class="eyebrow">Garden nudge</p>
+          <p id="garden-task"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Ranked Options</h2>
+          <p>Sorted by mood fit, drive time, and how many interests overlap.</p>
+        </div>
+        <div id="cards" class="cards"></div>
+      </section>
+
+      <section class="playlist-panel" aria-live="polite">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Drive soundtrack</p>
+            <h2 id="playlist-title">Playlist</h2>
+          </div>
+          <p id="playlist-copy"></p>
+        </div>
+        <div id="playlists" class="playlists"></div>
+      </section>
+
+      <section class="build-notes">
+        <h2>Next Build</h2>
+        <ul>
+          <li>Add live event imports for Austin and San Antonio venues.</li>
+          <li>Add restaurant notes and “worth the drive” flags.</li>
+          <li>Layer in odd historical markers as side quests near plans.</li>
+          <li>Use weather and garden inventory to prevent bad-timing suggestions.</li>
+          <li>Replace generated playlist search links with real saved playlists after music-service auth exists.</li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
