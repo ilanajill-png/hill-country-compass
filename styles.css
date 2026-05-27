@@ -180,6 +180,30 @@ select {
   line-height: 1.5;
 }
 
+.place-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.time-note {
+  color: #39433d;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.learn-more {
+  justify-self: start;
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
 .bars {
   display: grid;
   gap: 7px;

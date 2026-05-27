@@ -95,6 +95,17 @@ function renderBars(place) {
     .join("");
 }
 
+function renderPlaceActions(place) {
+  const time = place.timeNote
+    ? `<p class="time-note"><strong>Time:</strong> ${place.timeNote}</p>`
+    : "";
+  const link = place.learnMoreUrl
+    ? `<a class="learn-more" href="${place.learnMoreUrl}" target="_blank" rel="noreferrer">Learn more</a>`
+    : "";
+
+  return `${time}${link}`;
+}
+
 function driveMinutesForPlaylist() {
   if (state.drive <= 35) return 35;
   if (state.drive <= 75) return 75;
@@ -193,6 +204,7 @@ function render() {
             <h2>${place.name}</h2>
             <p class="score">Fit score ${place.score}</p>
             <p class="why">${place.why}</p>
+            <div class="place-actions">${renderPlaceActions(place)}</div>
           </div>
           <div class="bars">${renderBars(place)}</div>
         </article>
