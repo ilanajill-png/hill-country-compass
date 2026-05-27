@@ -4,7 +4,7 @@ const moodWeights = {
   music: { music: 2.6, food: 1, history: 0.8, garden: 0.2, code: 0.4, weirdness: 0.8 },
   food: { food: 2.5, history: 1, music: 0.8, garden: 0.4, code: 0.3, weirdness: 0.7 },
   history: { history: 2.5, weirdness: 1.4, food: 0.8, garden: 0.5, music: 0.4, code: 0.4 },
-  code: { code: 2.5, food: 0.8, history: 0.6, music: 0.4, garden: 0.6, weirdness: 0.5 }
+  code: { code: 4, food: 0.35, history: 0.25, music: 0.2, garden: 0.25, weirdness: 0.35 }
 };
 
 const metrics = ["garden", "music", "food", "history", "code"];
@@ -60,9 +60,17 @@ function scorePlace(place) {
     return sum + (place[key] || 0) * weight;
   }, 0);
   const drivePenalty = Math.max(0, place.distanceFromSchertzMinutes - 35) / 18;
-  const overlapBonus = metrics.filter((metric) => place[metric] >= 3).length * 1.4;
+  const overlapBonus =
+    state.mood === "code"
+      ? metrics.filter((metric) => metric !== "code" && place[metric] >= 3).length * 0.35
+      : metrics.filter((metric) => place[metric] >= 3).length * 1.4;
+  const weakCodePenalty = state.mood === "code" && place.code < 3 ? 7 : 0;
   const energyPenalty = place.energy > 3 ? 0.8 : 0;
-  return Math.round((interestScore + overlapBonus - drivePenalty - energyPenalty) * 10) / 10;
+  return (
+    Math.round(
+      (interestScore + overlapBonus - drivePenalty - energyPenalty - weakCodePenalty) * 10
+    ) / 10
+  );
 }
 
 function visiblePlaces() {
